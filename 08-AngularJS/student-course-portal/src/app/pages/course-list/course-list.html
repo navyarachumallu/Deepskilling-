@@ -1,0 +1,42 @@
+<h2>Course List</h2>
+
+<div>
+  <input
+    type="text"
+    [(ngModel)]="searchTerm"
+    placeholder="Search course">
+
+  <button
+    type="button"
+    (click)="searchCourses()">
+    Search
+  </button>
+</div>
+
+<br>
+
+<table border="1">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Code</th>
+      <th>Credits</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr
+      *ngFor="let course of courses"
+      (click)="goToCourse(course.id)"
+      style="cursor: pointer">
+
+      <td>{{ course.id }}</td>
+      <td>{{ course.name }}</td>
+      <td>{{ course.code }}</td>
+      <td>{{ course.credits }}</td>
+      <td>{{ course.gradeStatus }}</td>
+    </tr>
+  </tbody>
+</table>

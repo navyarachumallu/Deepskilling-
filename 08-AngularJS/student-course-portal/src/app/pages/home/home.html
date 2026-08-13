@@ -1,0 +1,9 @@
+<h1>Student Course Portal</h1>
+
+<p>Available Courses</p>
+
+<ul>
+  <li *ngFor="let course of courses">
+    {{ course.name }} ({{ course.code }}) - {{ course.credits }} Credits
+  </li>
+</ul>

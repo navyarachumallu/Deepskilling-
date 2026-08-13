@@ -1,0 +1,61 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "name": "Angular Fundamentals",
+      "code": "ANG101",
+      "credits": 4,
+      "gradeStatus": "passed"
+    },
+    {
+      "id": 2,
+      "name": "Data Structures",
+      "code": "DS201",
+      "credits": 3,
+      "gradeStatus": "failed"
+    },
+    {
+      "id": 3,
+      "name": "Database Systems",
+      "code": "DB301",
+      "credits": 4,
+      "gradeStatus": "pending"
+    },
+    {
+      "id": 4,
+      "name": "Operating Systems",
+      "code": "OS401",
+      "credits": 3,
+      "gradeStatus": "passed"
+    },
+    {
+      "id": 5,
+      "name": "Machine Learning",
+      "code": "ML501",
+      "credits": 4,
+      "gradeStatus": "pending"
+    }
+  ],
+  "students": [
+    {
+      "id": 1,
+      "name": "John"
+    },
+    {
+      "id": 2,
+      "name": "Alice"
+    }
+  ],
+  "enrollments": [
+    {
+      "id": 1,
+      "studentId": 1,
+      "courseId": 1
+    },
+    {
+      "id": 2,
+      "studentId": 2,
+      "courseId": 2
+    }
+  ]
+}
